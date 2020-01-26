@@ -2,8 +2,7 @@ Unification of DataFrames with Dataset
 
 class Dataset[T](
 val sqlContext: SQLContext,
-val queryExecution: QueryExecution)(
-implicit val encoder: Encoder[T])
+val queryExecution: QueryExecution)(implicit val encoder: Encoder[T])
 
 class DataFrame(
 sqlContext: SQLContext,
